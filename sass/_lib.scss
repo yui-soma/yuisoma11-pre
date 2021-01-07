@@ -1,0 +1,59 @@
+// フォントの指定  //
+html {
+    font-size: 10px;
+    font-family: Roboto Mono for Powerline;
+    min-width: 410px;
+}
+
+.first-v_title,.concept-title  {
+    font-family: ヒラギノ明朝 Pro;
+}
+
+.first-v_sub {
+    font-family: Zapfino;
+}
+
+.concept-disc {
+    font-family: ヒラギノ角ゴ Pro ;
+}
+
+.concept-word, .menu-word, .access-word {
+    font-family: Roboto;
+}
+
+
+// 色の指定(変数) //
+$rightgray: #A193861F;
+$gray: #A1938689;
+
+
+// 共通 //
+.inner {
+    height: 802px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+
+}
+
+// mixin //
+@mixin pc {
+    @media screen and (min-width: 960px){
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and(max-width: 959px){
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and(max-width: 600px){
+        @content;
+    }   
+}
