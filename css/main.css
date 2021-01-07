@@ -115,7 +115,6 @@ input, select {
 html {
   font-size: 10px;
   font-family: Roboto Mono for Powerline;
-  min-width: 410px;
 }
 
 .first-v_title, .concept-title {
@@ -171,7 +170,7 @@ header {
 
 .hd-logo {
   font-size: 3.8rem;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: 0.5rem;
   margin-left: 6%;
   margin-right: 1rem;
@@ -240,7 +239,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 1rem;
+  margin-right: 2vw;
 }
 
 nav ul li:hover {

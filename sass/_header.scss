@@ -10,7 +10,7 @@ header {
 
 .hd-logo {
     font-size: 3.8rem;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 0.5rem;
     margin-left: 6%;
     margin-right: 1rem;
@@ -55,7 +55,7 @@ nav {
         display: flex;
         justify-content: space-between;
         & li {
-            margin-right: 1rem;
+            margin-right: 2vw;
             &:hover {
                 color: #000000;
                 // border-bottom: 1px solid #000;
