@@ -180,6 +180,7 @@ header {
 @media screen and (max-width: 959px) {
   .hd-logo {
     font-size: 22px;
+    min-width: 220px;
   }
 }
 
@@ -202,6 +203,24 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-right: 20px;
+    position: absolute;
+    right: 0%;
+  }
+  .ham.active {
+    position: fixed;
+    z-index: 3;
+  }
+  .ham.active span:nth-last-of-type(1) {
+    width: 100%;
+    -webkit-transform: rotate(45deg) translate(-50%, -50%);
+            transform: rotate(45deg) translate(-50%, -50%);
+  }
+  .ham.active span:nth-last-of-type(2) {
+    opacity: 0;
+  }
+  .ham.active span:nth-last-of-type(3) {
+    -webkit-transform: rotate(-45deg) translate(-50%, 0%);
+            transform: rotate(-45deg) translate(-50%, 0%);
   }
   .ham span {
     display: -webkit-box;
@@ -211,6 +230,8 @@ header {
     height: 2px;
     background-color: black;
     z-index: 3;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   .ham span:last-child {
     width: 60%;
@@ -225,7 +246,9 @@ nav {
 
 @media screen and (max-width: 959px) {
   nav {
-    display: none;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
 }
 
@@ -246,6 +269,8 @@ nav ul li:hover {
   color: #000000;
   padding-bottom: 5px;
   position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 nav ul li:hover:before {
@@ -259,6 +284,58 @@ nav ul li:hover:before {
   width: 48px;
   height: 1px;
   background-color: black;
+}
+
+@media screen and (max-width: 959px) {
+  .hd-navmenu.active ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 8% 0 5% 0;
+    overflow: auto;
+    /*メニュー数が増えた場合スクロール可能*/
+    max-height: 100vh;
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: 4;
+    -webkit-box-shadow: 0 0 20px #000;
+            box-shadow: 0 0 20px #000;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .mask.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 2;
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0.7;
+  }
 }
 
 .first-v {
