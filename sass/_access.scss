@@ -2,6 +2,9 @@
     background-color: $rightgray;
     height: 757px;
     width: 100%;
+    @include tab {
+        height: 100%;
+    }
 }
 
 .ad-map {

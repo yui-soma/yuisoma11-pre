@@ -435,7 +435,7 @@ nav ul li:hover:before {
 }
 
 .fv-inner {
-  height: 110vh;
+  height: 100vh;
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -746,6 +746,12 @@ nav ul li:hover:before {
   background-color: #A193861F;
   height: 757px;
   width: 100%;
+}
+
+@media screen and (max-width: 959px) {
+  .access {
+    height: 100%;
+  }
 }
 
 .ad-map {
