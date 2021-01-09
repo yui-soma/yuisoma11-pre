@@ -2,6 +2,12 @@ header {
     display: flex;
     line-height: 100%;
     margin-top: 5%;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 5;
     @include tab {
         display: flex;
         justify-content: space-between;
@@ -90,7 +96,7 @@ nav {
                     display: flex;
                     content: "";
                     position: absolute;
-                    left: 0%;
+                    // left: 0%;
                     bottom: -3px;
                     width: 48px;
                     height: 1px;

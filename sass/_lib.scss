@@ -2,6 +2,12 @@
 html {
     font-size: 10px;
     font-family: Roboto Mono for Powerline;
+    scroll-behavior: smooth;
+}
+
+.smooth-contents {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 .first-v_title,.concept-title  {

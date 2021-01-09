@@ -115,6 +115,12 @@ input, select {
 html {
   font-size: 10px;
   font-family: Roboto Mono for Powerline;
+  scroll-behavior: smooth;
+}
+
+.smooth-contents {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 .first-v_title, .concept-title {
@@ -155,6 +161,12 @@ header {
   display: flex;
   line-height: 100%;
   margin-top: 5%;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 @media screen and (max-width: 959px) {
@@ -279,7 +291,6 @@ nav ul li:hover:before {
   display: flex;
   content: "";
   position: absolute;
-  left: 0%;
   bottom: -3px;
   width: 48px;
   height: 1px;
